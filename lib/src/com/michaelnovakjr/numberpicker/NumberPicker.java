@@ -166,7 +166,7 @@ public class NumberPicker extends LinearLayout implements OnClickListener,
 	        mText.setOnFocusChangeListener(this);
 	        mText.setOnEditorActionListener(this);
         } else { // Unable to choice a cutom number
-        	mText.setEnabled(false);
+        	mText.setFocusable(false);
         }
         mText.setFilters(new InputFilter[] {inputFilter});
         
